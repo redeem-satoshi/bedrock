@@ -337,6 +337,12 @@
     },
     {
       "files": [
+        "css/mozorg/home/home-2018.scss"
+      ],
+      "name": "home-2018"
+    },
+    {
+      "files": [
         "css/newsletter/newsletter.less"
       ],
       "name": "newsletter"
@@ -1164,6 +1170,8 @@
         "protocol/js/protocol-modal.js",
         "protocol/js/protocol-newsletter.js",
         "js/base/mozilla-lazy-load.js",
+        "js/base/mozilla-fxa.js",
+        "js/base/mozilla-fxa-init.js",
         "js/libs/jquery.waypoints.min.js",
         "js/newsletter/form-protocol.js",
         "js/mozorg/home/home.js"
