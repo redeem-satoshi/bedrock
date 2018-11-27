@@ -52,7 +52,8 @@ $image-path: '/media/protocol/img';
 .mzp-c-card-feature-content {
     .mzp-c-cta-link {
         color: #0a84ff;
-        &:hover {
+        &:hover,
+        &:focus {
             color: #0060df;
             border-bottom: 2px solid #0060df;
         }
