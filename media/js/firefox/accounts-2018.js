@@ -17,7 +17,7 @@
 
     function openFxModal() {
         fxQrTitle.style.display = 'block';
-        fxAppButtons.style.display = 'block';
+        fxAppButtons.style.display = 'inline-block';
         Mzp.Modal.createModal(this, content, {
             title: 'Download the Firefox App',
             className: 'mzp-t-firefox',
@@ -33,6 +33,7 @@
 
     function openModal() {
         fxQrTitle.style.display = 'none';
+        fxAppButtons.style.display = 'none';
         var parent = this.closest('.mzp-c-card-feature');
         var productString = parent.className;
         var mobileButtons = document.querySelectorAll('.mobile-download-buttons');
