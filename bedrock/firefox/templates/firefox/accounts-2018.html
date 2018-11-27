@@ -22,9 +22,9 @@
       <h1 class="mzp-c-hero-title">{{ _('One log-in. Power and privacy everywhere.') }}</h1>
       <div id="hero-cta" class="mzp-c-hero-cta">
         <div class="show-fxa-supported-signed-out">
-            <a href="https://accounts.firefox.com/signup?service=sync&context=fx_desktop_v3&entrypoint=mozilla.org-button-light&utm_content=%2Ffirefox%2Faccounts%2F&utm_campaign=Create an Account" class="button account-benefits" data-button-name="Create account" data-link-type="button" data-cta-position="primary cta">
-              {{ _('Create a Firefox Account') }}
-            </a>
+          <a href="https://accounts.firefox.com/signup?service=sync&context=fx_desktop_v3&entrypoint=mozilla.org-button-light&utm_content=%2Ffirefox%2Faccounts%2F&utm_campaign=Create an Account" class="button account-benefits" data-button-name="Create account" data-link-type="button" data-cta-position="primary cta">
+            {{ _('Create a Firefox Account') }}
+          </a>
         </div>
         <div class="show-fxa-supported-signed-in">
           <button class="mzp-c-button" type="button" id="fx-modal">{{ _('Download Firefox App') }}</button>
@@ -194,7 +194,7 @@
     <div id="fxa-sign-up-form">
       <div class="fxa-cta show-fxa-supported-signed-in show-fxa-supported-signed-out">
         <div class="show-fxa-supported-signed-in">
-          <ul class="mobile-download-buttons">
+          <ul class="mobile-download-buttons" id="bottom-banner-mobile">
             <li>
               {{ google_play_button(id=android_id, extra_data_attributes={'download-location': button_location}) }}
             </li>

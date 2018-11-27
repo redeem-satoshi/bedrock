@@ -9,6 +9,7 @@
     var notes = document.querySelectorAll('.mobile-notes');
     var fxModal = document.getElementById('fx-modal');
     var qrCode = document.getElementById('qr-code');
+    var bottomBannerMobile = document.getElementById('bottom-banner-mobile');
 
     var fxQrTitle = document.getElementById('fx-qr-title');
     var fxAppButtons = document.getElementById('fx-app-buttons');
@@ -50,6 +51,7 @@
                 mobileTitles[i].style.display = 'none';
             }
             for (i = 0; i < mobileButtons.length; i++){
+                console.log(mobileButtons[i]);
                 mobileButtons[i].style.display = 'none';
             }
         }
@@ -75,6 +77,7 @@
             closeText: window.Mozilla.Utils.trans('global-close'),
             onDestroy: function() {
                 hide(mobileTitles, mobileButtons);
+                bottomBannerMobile.style.display = 'inline-block';
             }
         });
 
