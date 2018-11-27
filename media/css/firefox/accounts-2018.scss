@@ -24,9 +24,12 @@ $image-path: '/media/protocol/img';
     text-align: center;
     width: 50%;
     margin: 0 auto;
+    font-family: $font-open-sans;
+    font-weight: normal;
 }
 
 /* -------------------------------------------------------------------------- */
+// Custom Protocol
 // Hero
 
 .mzp-c-hero.mzp-t-firefox:after {
@@ -41,6 +44,18 @@ $image-path: '/media/protocol/img';
 .mzp-t-firefox {
     h1, h2, h3, h4 {
         font-weight: normal;
+    }
+}
+
+// Cards
+
+.mzp-c-card-feature-content {
+    .mzp-c-cta-link {
+        color: #0a84ff;
+        &:hover {
+            color: #0060df;
+            border-bottom: 2px solid #0060df;
+        }
     }
 }
 
