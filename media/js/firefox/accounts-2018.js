@@ -51,7 +51,6 @@
                 mobileTitles[i].style.display = 'none';
             }
             for (i = 0; i < mobileButtons.length; i++){
-                console.log(mobileButtons[i]);
                 mobileButtons[i].style.display = 'none';
             }
         }
