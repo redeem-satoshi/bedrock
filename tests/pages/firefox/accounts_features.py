@@ -10,10 +10,10 @@ from pages.regions.download_button import DownloadButton
 
 class AccountsFeaturesPage(FirefoxBasePage):
 
-    URL_TEMPLATE = '/{locale}/firefox/accounts/features'
+    URL_TEMPLATE = '/{locale}/firefox/accounts/'
 
-    _create_account_button_locator = (By.ID, 'features-header-account')
-    _download_button_locator = (By.ID, 'features-header-download')
+    _create_account_button_locator = (By.ID, 'features-hero-account')
+    _download_button_locator = (By.ID, 'features-hero-download')
 
     def wait_for_page_to_load(self):
         super(FirefoxBasePage, self).wait_for_page_to_load()
