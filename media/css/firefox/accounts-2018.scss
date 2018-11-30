@@ -6,13 +6,8 @@ $font-path: '/media/fonts';
 $image-path: '/media/protocol/img';
 
 @import '../../protocol/css/includes/lib';
-@import '../../protocol/css/components/button';
-@import '../../protocol/css/components/billboard';
-@import '../../protocol/css/components/call-out';
 @import '../../protocol/css/components/feature-card';
 @import '../../protocol/css/components/hero';
-@import '../../protocol/css/templates/card-layout';
-@import '../../protocol/css/components/newsletter-form';
 @import '../../protocol/css/components/modal';
 
 .show {
@@ -51,11 +46,17 @@ $image-path: '/media/protocol/img';
 
 .mzp-c-card-feature-content {
     .mzp-c-cta-link {
-        color: #0a84ff;
+        &:link,
+        &:visited {
+            color: $color-link;
+            border-bottom-color: $color-link;
+        }
+
         &:hover,
-        &:focus {
-            color: #0060df;
-            border-bottom: 2px solid #0060df;
+        &:focus,
+        &:active {
+            color: $color-link-hover;
+            border-bottom-color: $color-link-hover;
         }
     }
 }
@@ -83,11 +84,11 @@ $image-path: '/media/protocol/img';
 }
 
 .mzp-c-modal-inner {
-    @media #{$mq-lg} {
+    @media #{$mq-md} {
         max-width: 500px;
         margin: 0 auto;
     }
-    @media #{$mq-md} {
+    @media #{$mq-lg} {
         max-width: 500px;
         margin: 0 auto;
     }
@@ -108,7 +109,7 @@ $image-path: '/media/protocol/img';
 
         .mobile-download-buttons {
             li {
-            display: inline-block;
+                display: inline-block;
             }
         }
     }
@@ -138,7 +139,7 @@ $image-path: '/media/protocol/img';
 }
 
 .fx-qr {
-    background: url('/media/img/firefox/accounts/pocket-qr.png') center no-repeat;
+    background: url('/media/img/firefox/accounts/fx-qr.png') center no-repeat;
     background-size: contain;
 }
 
