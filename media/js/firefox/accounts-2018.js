@@ -32,7 +32,8 @@
         qrCode.setAttribute('class', 'fx-qr');
     }
 
-    function openModal() {
+    function openModal(e) {
+        e.preventDefault();
         fxQrTitle.style.display = 'none';
         fxAppButtons.style.display = 'none';
         var parent = this.closest('.mzp-c-card-feature');
